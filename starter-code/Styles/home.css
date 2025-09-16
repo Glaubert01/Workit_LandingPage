@@ -2,12 +2,12 @@
 @import url(./styles.css);
 
 .content__home {
-  background: #24053E;
+  background: var(--roxo-escuro);
   color: white;
   padding: 56px 20px 100px 20px;
   text-align: center;
 
-  clip-path: ellipse(220% 90% at 50% 0%);
+  clip-path: ellipse(230% 90% at 50% 0%);
 }
 
 
@@ -15,5 +15,16 @@ h1 {
     font-family: var(--fonte-1);
     font-size: 48px;
     font-weight: 600;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
+.learn__button{
+    text-decoration: none;
+    padding: 25px 50px;
+    background-color: var(--verde-elementos);
+    color: var(--roxo-escuro);
+    font-family: var(--fonte-2);
+    font-size: 16px;
+    font-weight: bold;
+}
