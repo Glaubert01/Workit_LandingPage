@@ -1,0 +1,19 @@
+@import url(./reset.css);
+@import url(./styles.css);
+
+.content__home {
+  background-color: var(--roxo-escuro); 
+  color: white;
+  text-align: center;
+  padding: 56px 20px;
+  
+  /* cria a curva na parte de baixo */
+  clip-path: ellipse(120% 100% at 50% 0%);
+}
+
+h1 {
+    font-family: var(--fonte-1);
+    font-size: 48px;
+    font-weight: 600;
+}
+
