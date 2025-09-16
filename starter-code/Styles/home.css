@@ -2,14 +2,14 @@
 @import url(./styles.css);
 
 .content__home {
-  background-color: var(--roxo-escuro); 
+  background: #24053E;
   color: white;
+  padding: 56px 20px 100px 20px;
   text-align: center;
-  padding: 56px 20px;
-  
-  /* cria a curva na parte de baixo */
-  clip-path: ellipse(120% 100% at 50% 0%);
+
+  clip-path: ellipse(220% 90% at 50% 0%);
 }
+
 
 h1 {
     font-family: var(--fonte-1);
