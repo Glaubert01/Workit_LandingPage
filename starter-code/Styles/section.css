@@ -8,3 +8,17 @@
     text-align: center;
 }
 
+.content__item-number{
+    font-family: var(--fonte-1);
+    font-size: 20px;
+    border-radius:100%;
+    border: 2px solid var(--roxo-medio);
+    padding: 10px 20px;
+    line-height: 24px;
+}
+
+.first_item{
+    margin-top: 80px;
+}
+
+
