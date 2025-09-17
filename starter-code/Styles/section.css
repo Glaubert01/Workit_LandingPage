@@ -36,5 +36,15 @@
     font-family: var(--fonte-2);
     margin-bottom: 32px;
     color: var(--roxo-escuro);
+    padding-bottom: 88px;
 }
 
+.content__founder{
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+}
+
+.img_founder{
+    
+}
