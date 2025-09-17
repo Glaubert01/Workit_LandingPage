@@ -10,3 +10,7 @@
     --branco: #FFFFFF;
 
 }
+
+body{
+    background-color: var(--roxo-claro);
+}

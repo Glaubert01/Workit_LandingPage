@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: var(--roxo-claro);
 }
 
 .content__item-number{
