@@ -1,0 +1,31 @@
+.rodape{
+  background: #fff;
+  padding: 56px 0 64px;          /* ajuste os espaçamentos do Figma */
+}
+
+.rodape_principal{
+  max-width: 360px;              /* combine com seu card */
+  margin: 0 auto;
+  display: flex;    
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;                     /* espaço entre logo e ícones */
+}
+
+.logo-dark{
+  width: 100px;                  /* ajuste conforme Figma */
+  height: auto;
+  margin-bottom: 56px;
+}
+
+.rodape_sociais{
+  display: flex;
+  align-items: center;
+  gap: 24px;                     /* distância entre os ícones */
+}
+
+.sociais{
+  width: 24px;
+  height: 24px;
+  display: block;
+}
