@@ -40,14 +40,15 @@
 }
 
 .content__founder {
-  --diameter: clamp(220px, 60vw, 320px); /* diâmetro da imagem */
-  --shift: 0.80; /* quanto o card cobre a foto (55% do diâmetro) */
+  --diameter: clamp(280px, 60vw, 320px); /* diâmetro da imagem */
+  --shift: 0.84; /* quanto o card cobre a foto (55% do diâmetro) */
 
   display: grid;
   justify-items: center;
   text-align: center;
   margin-inline: auto;
   row-gap: 0;
+  background-color: var(--branco);
 }
 
 /* imagem do fundador por baixo */
