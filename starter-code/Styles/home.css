@@ -61,6 +61,29 @@ h1 {
      font-size: 60px;
   }
 
+  .content__home::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0; /* acima do ::before (curva), atrás do conteúdo */
+
+    background-image:
+      url("../assets/images/bg-pattern-1.svg"), /* esquerda */
+      url("../assets/images/bg-pattern-2.svg"); /* direita */
+    background-repeat: no-repeat, no-repeat;
+
+    /* ajuste fino livre: */
+    background-position:
+      left clamp(-220px, -15vw, -120px) top clamp(60px, 10vw, 140px),
+      right clamp(-200px, -14vw, -110px) top clamp(120px, 14vw, 220px);
+
+    background-size:
+      clamp(260px, 28vw, 420px),
+      clamp(280px, 30vw, 440px);
+    
+  }
+
   .content__home::before {
     clip-path: ellipse(100% 80% at 50% 0%);
   }
