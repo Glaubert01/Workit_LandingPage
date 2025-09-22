@@ -1,16 +1,10 @@
 :root {
+  --fonte-1: "Fraunces", serif;
+  --fonte-2: "Manrope", sans-serif;
 
-    --fonte-1: "Fraunces", serif;
-    --fonte-2:  "Manrope", sans-serif;
-
-    --verde-elementos: #44FFA1;
-    --roxo-escuro: #24053E;
-    --roxo-medio: #584D62;
-    --roxo-claro: #FCF8FF;
-    --branco: #FFFFFF;
-
-}
-
-body{
-    background-color: var(--roxo-claro);
+  --verde-elementos: #44ffa1;
+  --roxo-escuro: #24053e;
+  --roxo-medio: #584d62;
+  --roxo-claro: #fcf8ff;
+  --branco: #ffffff;
 }
