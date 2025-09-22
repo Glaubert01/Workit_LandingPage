@@ -2,7 +2,7 @@
   position: relative;
   background: var(--roxo-claro);
   color: var(--branco);
-  padding: 56px 20px clamp(140px, 18vw, 220px) 20px;
+  padding: 56px 20px clamp(280px, 36vw, 440px) 20px;
   text-align: center;
   margin-top: -1px;
 
@@ -53,4 +53,22 @@ h1 {
   width: 85vw;
   max-width: 320px;
   z-index: 2;
+}
+
+@media screen and (min-width: 768px){
+  h1{
+     width: clamp(200px, 60%, 600px);
+     font-size: 60px;
+  }
+
+  .content__home::before {
+    clip-path: ellipse(100% 80% at 50% 0%);
+  }
+
+  .img__phone{
+    width: 85vw;
+    max-width: 602px;
+    bottom: calc(-1 * clamp(40px, 8vw, 90px) + 50px);
+    transform: translateX(-50%) ;
+  }
 }
