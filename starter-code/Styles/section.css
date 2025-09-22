@@ -138,3 +138,12 @@
   font-weight: 700;
   text-decoration: none;
 }
+
+@media screen and (min-width: 768px){
+  .content__itens::before{
+    clip-path: ellipse(150% 90% at 50% 0%);
+  }
+  .content__itens{
+    padding: 56px 20px clamp(50px,16vw, 320px) 20px;
+  }
+}
