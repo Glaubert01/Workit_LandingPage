@@ -182,24 +182,18 @@
   }
 
   .content__founder {
-    display: flex;
-    align-items: center;       /* alinha verticalmente */
-    justify-content: center;   /* centraliza horizontalmente */
-    gap: 40px;                 /* espaço entre foto e texto */
-    max-width: 1100px;
-    margin: 0 auto;
+    --shift: 0.6;
   }
 
-  .img_founder {
-    width: 280px;              /* ajuste conforme o figma */
-    height: auto;
-    flex-shrink: 0;            /* evita que a imagem seja comprimida */
+  .content__founder-section{
+    text-align: start;
+    width: clamp(320px, 500px, 500px);
   }
 
-  .content__founder-section {
-    max-width: 500px;          /* largura do bloco de texto */
-    text-align: left;          /* texto alinhado à esquerda */
+  .content__founder-text{
+    margin: 0;
+    margin-bottom: 24px;
   }
  
-  
+
 }
