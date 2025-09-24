@@ -150,15 +150,15 @@
   .content__item{
     display: grid;
     grid-template-columns: 100px 1fr; 
-    grid-template-rows: 50% 50%;  
-    column-gap: 24px;
+    grid-template-rows: 35% 50%;  
+    column-gap: 56px;
     align-items: start;
     justify-items: start;
   }
 
   .content__item-number{
     grid-column: 1;
-    grid-row: 1 / span 2;   /* ocupa as duas linhas */
+    grid-row: 1;  /* ocupa as duas linhas */
     margin-bottom: 0;
     align-self: end;      /* alinha na parte inferior da linha */
     justify-self: end;      
@@ -174,6 +174,11 @@
     grid-column: 2;
     grid-row: 2;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    align-self: start;
+    justify-self: start;
+    text-align: start;
   }
  
   
