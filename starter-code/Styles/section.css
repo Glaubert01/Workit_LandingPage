@@ -241,6 +241,23 @@
 }
 
 @media screen and (min-width: 1440px){
+
+  .content__item{
+    
+  }
  
+  .content__itens{
+    display: flex;
+    flex-direction: row;
+    padding-top: 150px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .first_item {
+  margin: 0;
+}
+
+.content__item{}
 
 }
