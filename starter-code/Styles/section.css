@@ -187,13 +187,22 @@
 
   .content__founder-section{
     text-align: start;
-    width: clamp(320px, 500px, 500px);
+    width: clamp(320px, 490px, 500px);
+    transform: translateY(calc(var(--diameter) * var(--shift)));
+    justify-self: end;
+    margin-right: 44px;
+   
   }
 
   .content__founder-text{
     margin: 0;
     margin-bottom: 24px;
   }
- 
+
+  .img_founder {
+  justify-self: start; /* move a imagem para a esquerda */
+  margin-left: 44px;
+}
+
 
 }
