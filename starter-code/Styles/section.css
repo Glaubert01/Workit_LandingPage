@@ -70,7 +70,7 @@
 }
 
 .content__founder {
-  --diameter: clamp(280px, 60vw, 320px); /* diâmetro da imagem */
+  --diameter: clamp(280px, 60vw, 280px); /* diâmetro da imagem */
   --shift: 0.84; /* quanto o card cobre a foto (55% do diâmetro) */
 
   display: grid;
@@ -183,16 +183,40 @@
 
   .content__founder {
     --shift: 0.6;
+    position: relative;
+    overflow: visible;       /* garante que nada seja podado */
+    isolation: isolate;      /* controla a pilha de z-index */
   }
 
   .content__founder-section{
     text-align: start;
-    width: clamp(320px, 490px, 500px);
+    width: clamp(320px, 450px, 450px);
     transform: translateY(calc(var(--diameter) * var(--shift)));
     justify-self: end;
     margin-right: 44px;
+    position: relative;
+    overflow: visible;       /* deixa o pseudo-elemento vazar */
+    z-index: 2;              /* card acima da espiral */
    
   }
+
+  .content__founder-section::after{
+  content: "";
+  position: absolute;
+  /* right: clamp(-24px, -4vw, -64px);   empurra um pouco para fora à direita */
+  bottom: clamp(-100px, -18vw, -260px);  /* e para baixo */
+  width: clamp(120px, 26vw, 220px);   /* tamanho responsivo */
+  aspect-ratio: 1 / 1;
+  background: url("../assets/images/bg-pattern-3.svg") no-repeat center / contain;
+  pointer-events: none;   /* não interfere em cliques no botão */
+  z-index: 1;             /* fica atrás do conteúdo do card */
+  opacity: 1;             /* ajuste se quiser mais/menos visível */
+}
+
+.content__founder-section > *{
+   position: relative;
+   z-index: 3; 
+}
 
   .content__founder-text{
     margin: 0;
@@ -200,6 +224,7 @@
   }
 
   .img_founder {
+
   justify-self: start; /* move a imagem para a esquerda */
   margin-left: 44px;
 }
