@@ -204,5 +204,13 @@
   margin-left: 44px;
 }
 
+.content__founder-text {
+  width: 100%;          /* ocupa toda a largura disponível */
+  max-width: none;      /* remove a restrição */
+  margin: 0 0 24px 0;   /* alinha à esquerda e só mantém margem inferior */
+  line-height: 1.6;
+  color: #ede4f8;
+  font-family: var(--fonte-2);
+}
 
 }
