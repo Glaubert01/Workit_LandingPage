@@ -99,3 +99,21 @@ h1 {
     transform: translateX(-50%) ;
   }
 }
+
+@media screen and (min-width: 1440px){
+  .content__home::after{
+    background-position:
+      left clamp(-150px, -10vw, -80px) top clamp(60px, 10vw, 140px),
+      right clamp(-100px, -10vw, -60px) top clamp(120px, 14vw, 220px);
+
+    background-size:
+      clamp(260px, 28vw, 420px),
+      clamp(180px, 20vw, 260px);
+
+  }
+
+   .content__home::before {
+    clip-path: ellipse(100% 90% at 50% 0%);
+  }
+ 
+}
